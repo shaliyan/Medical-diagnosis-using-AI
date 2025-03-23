@@ -1,10 +1,9 @@
-from turtle import color
 import streamlit as st
 import pickle
 from streamlit_option_menu import option_menu
 
 # Change Name & Logo
-st.set_page_config(page_title="Disease Prediction", page_icon="⚕️")
+st.set_page_config(page_title="Disease Prediction", page_icon="⚕")
 
 # Hiding Streamlit add-ons
 hide_st_style = """
@@ -38,36 +37,6 @@ width: 100%;
 height: 100%;
 background-color: rgba(0, 0, 0, 0.7);
 }}
-
-/* Change text color to white */
-* {{
-color: white !important;
-}}
-
-
-/* Target disease names and set their color to black */
-.models-name {{
-    color: black !important;
-    font-weight: bold;
-}}
-
-
-
-/* Change dropdown options text to black */
-div[role="listbox"] > div {{
-    color: black !important;
-}}
-
-
-/* Change input text color to black */
-input, textarea, select {{
-    color: black !important;
-    background-color: white !important;
-   
-
-}}
-
- 
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
